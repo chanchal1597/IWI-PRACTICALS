@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Layout with Media Queries</title>
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+        }
+        .container {
+           display: grid;
+           gap: 20px;
+           padding: 20px;
+        }
+        .box {
+           background: white;
+           padding: 20px;
+           border-radius: 8px;
+           text-align: center;
+           font-size: 1.2rem;
+           font-weight: bold;
+        }
+        body {
+           background-color: #FFECB3; /* light amber for Mobiles */
+        }
+        .container {
+           grid-template-columns: 1fr;
+        }
+        @media (min-width: 600px) {
+            body {
+                background-color: #BBDEFB; /* light blue for Tablets */
+            }
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 992px) {
+            body {
+                background-color: #C8E6C9; /* light green for Laptops  */
+            }
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box">Column 1</div>
+  <div class="box">Column 2</div>
+  <div class="box">Column 3</div>
+</div>
+
+</body>
+</html>

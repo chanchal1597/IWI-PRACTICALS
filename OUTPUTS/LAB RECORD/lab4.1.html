@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+
+        <h2 id="title">Original Title</h2>
+
+        <p id="text">This is some text.</p>
+
+        <p class="message">Message will appear here.</p>
+
+        <button onclick="changeContent()">Click Me</button>
+
+        <script>
+            function changeContent() {
+                // getElementById()
+                let title = document.getElementById("title");
+                title.innerHTML = "Title Changed!";
+
+                // querySelector() for an ID
+                let text = document.querySelector("#text");
+                text.innerHTML = "The text has been updated.";
+
+                // querySelector() for a class
+                let msg = document.querySelector(".message");
+                msg.innerHTML = "This message was added using innerHTML.";
+            }
+        </script>
+
+    </body>
+    
+</html>

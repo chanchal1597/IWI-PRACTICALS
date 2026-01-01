@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced CSS: Box Model & Styling</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+.box {
+    width: 600px;
+    height: 500px;
+    border: 3px solid black;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    background-image: url("https://picsum.photos/300/200?random=2");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+h1 {
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 4px black;
+}
+h2 {
+    margin-top: 0;
+}
+    </style>
+</head>
+<body>
+    <h1>Advanced CSS Styling Demo</h1>
+
+    <div class="box">
+        <h2>Box Model Example</h2>
+        <p style="color: rgb(1, 1, 16);">
+            This box shows the use of margin, padding, border and background image.
+        </p>
+    </div>
+
+</body>
+</html>
