@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+
+        <h2>Merge Two Arrays Using Spread Operator</h2>
+
+        <h3 id="result"></h3> 
+
+        <script>
+            
+            let array1 = [1, 2, 3];
+            let array2 = [4, 5, 6];
+
+            let mergedArray = [...array1, ...array2];
+
+            document.getElementById("result").innerHTML =
+            "1st Array: " + array1.join(", ") + "<br>" +
+            "2nd Array: " + array2.join(", ") + "<br><br>" +
+            "Merged Array: " + mergedArray.join(", ");
+             
+
+        </script>
+
+    </body>
+</html>
